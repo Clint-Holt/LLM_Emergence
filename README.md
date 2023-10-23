@@ -3,6 +3,7 @@ This repo discusses a 2022 paper primarily out of Google titled "Emergent Abilit
 
 # Emergent Abilities of Large Language Models
 Transactions on Machine Learning Research 08/2022
+
 Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama , Maarten Bosma, Denny Zhou, Donald Metzler, Ed H. Chi, Tatsunori Hashimoto, Oriol Vinyals, Percy Liang, Jeff Dean, William Fedus
 
 ## Outline
@@ -17,28 +18,39 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 **What are _emergent abilities_ as seen in nature?** 
 - Emergent abilities can be thought of as sudden appearances of a given ability.
 - These are typically applied to a narrow category: for instance, if measuring this kidney bean plant on its ability to absorb sunlight
-- it becomes drastically better on day 7 than on day 6 of its life.
+  it becomes drastically better on day 7 than on day 6 of its life.
+  
 ![](img/kidney-bean-plant-timelapse.gif)
+
 - Similarly, if you measure water's ability to dissolve other substances or be compressed, these abilities will drastically change
-- at 0 celcius and 100 celcius.
+  at 0 celcius and 100 celcius.
+  
 ![](img/boiling.gif)
 
 **In contrast, some properties scale as opposed to having "phase transitions"**
+
 ![](img/water_density.jpg)
 
 ### Do you think LLM abilities such as performing arithmetic are emergent or improve linearly?
+
 ### How about a language task such as understanding what a word means based on context?
 
 # Approach
+
 - Google aggregated models of many sizes and plotted all accuracies on widely used and approved of benchmarks.
+- 
 ## Few Shot Method
+
 ![](img/F1_Fewshot.png)
 
 ## Primary Model Aggregation Method: **Training FLOPs**
+
 - Emergence is clearly seen
+- 
 ![](img/F2_FewShot_Benchmarks.png)
 
 - Other specialized prompting techniques also lead to emergence
+- 
 ***************************** Insert here Wiki stuff if time *************************************
   
 ## In Contrast: Cross-Entropy Loss Scales with Training FLOPS
@@ -47,7 +59,8 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 
 ## Interestingly "Partial-Credit" Metrics also exhibit emergence with increased training FLOPs
 
-- "BLEU", "ROUGE", and "BLEURT" are the partial credit 
+- "BLEU", "ROUGE", and "BLEURT" are the partial credit
+- 
 ![](img/AppF7_Partial_Cred_NotLinear.png)
 
 ## Critiques:
