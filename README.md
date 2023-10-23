@@ -16,9 +16,9 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 
 ## Overview
 **What are _emergent abilities_ as seen in nature?** 
-- Emergent abilities can be thought of as sudden appearances of a given ability.
-- These are typically applied to a narrow category: for instance, if measuring this kidney bean plant on its ability to absorb sunlight
-  it becomes drastically better on day 7 than on day 6 of its life.
+- Emergent abilities can be thought of as *sudden appearances* of a given ability.
+- These are typically applied to a *specific application*: for instance, sunlight absorbance
+  is an emergent ability of this sprout from near 0 at day 6 to a significant amount on day 7.
   
 ![](img/kidney-bean-plant-timelapse.gif)
 
@@ -31,29 +31,31 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 
 ![](img/water_density.jpg)
 
-### Do you think LLM abilities such as performing arithmetic are emergent or improve linearly?
+### Which of these LLM abilities do you think are emergent?
+- Arithmetic
+- Understanding what a word means in context
 
-### How about a language task such as understanding what a word means based on context?
 
-# Approach
+# Paper's Approach
 
-- Google aggregated models of many sizes and plotted all accuracies on widely used and approved of benchmarks.
-- 
+- LLMs of many sizes were aggregated and assessed for accuracy on widely used and approved benchmarks.
+
+
 ## Few Shot Method
 
 ![](img/F1_Fewshot.png)
 
 ## Primary Model Aggregation Method: **Training FLOPs**
 
-- Emergence is clearly seen
-- 
+- Emergence is the sudden increase from random accuracy to meaningful accuracy
+  
 ![](img/F2_FewShot_Benchmarks.png)
 
-- Other specialized prompting techniques also lead to emergence
-- 
+- Other specialized prompting techniques were also used and emergence was seen for them as well.
+  
 ***************************** Insert here Wiki stuff if time *************************************
   
-## In Contrast: Cross-Entropy Loss Scales with Training FLOPS
+## In contrast Cross-Entropy Loss *scales* with training FLOPS
 
 ![](img/MoreLinear.png)
 
@@ -61,7 +63,7 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 
 - "BLEU", "ROUGE", and "BLEURT" are the partial credit
 - 
-![](img/AppF7_Partial_Cred_NotLinear.png)
+![](img/AppF7_Partial_Credit_NotLinear.png)
 
 ## Critiques:
 - I personally am unsure of if FLOPs is the best metric. But they did also look by metrics like # of parameters
