@@ -48,7 +48,7 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 ### There are 3 simplistic ways of looking at model scale:
 1. Number of Parameters
 2. Training Set Size
-3. Training FLOPs
+3. Training FLOPs (Floating Point Operations)
 - other ways: architecture, training epochs, amount of high quality data, etc.
 
 ## They argue all 3 are correlated, but #3 is a good metric to encompass the others 
