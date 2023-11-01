@@ -27,27 +27,37 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
   
 ![](img/boiling.gif)
 
-**In contrast, some properties scale as opposed to having "phase transitions"**
+**In contrast, some properties such as density scale over a given range**
 
 ![](img/water_density.jpg)
+
+**Many abilities of Large Language Models' scale linearly such as total loss on their test set**
+<img width="412" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/579c61b5-ad33-4945-97f6-f7fd025a794a">
+
 
 ### Which of these LLM abilities do you think are emergent?
 - Arithmetic
 - Understanding what a word means in context
+  
+*(Answer given below)*
 
+# Paper's Overall Approach:
 
-# Paper's Approach
-
-- LLMs of many sizes were aggregated and assessed for accuracy on widely used and approved benchmarks.
-
-
-## Few Shot Method
+- To aggregate LLMs of many scales and assess them for accuracy on widely used and approved benchmarks.
+  
+## Method 1: Few Shot Prompting
 
 ![](img/F1_Fewshot.png)
 
-## Primary Model Aggregation Method: **Training FLOPs**
+### There are 3 simplistic ways of looking at model scale:
+1. Number of Parameters
+2. Training Set Size
+3. Training FLOPs
+- other ways: architecture, training epochs, amount of high quality data, benchmarked performance on one thing
 
-- Emergence is the sudden increase from random accuracy to meaningful accuracy
+## They argue all 3 are correlated, but #3 is a good metric to encompass the others 
+
+- Emergence in this paper is thus the sudden increase from random accuracy to meaningful accuracy as Training FLOPs increase.
   
 ![](img/F2_FewShot_Benchmarks.png)
 
@@ -81,6 +91,7 @@ or do you think it will simply "emerge"?
 
 ## Reference
 - Primary paper Jason Wei et al., “Emergent Abilities of Large Language Models” (arXiv, October 26, 2022), http://arxiv.org/abs/2206.07682.
+- "Scaling Laws for Neural Language Models" https://arxiv.org/pdf/2001.08361.pdf
 - https://laughingsquid.com/kidney-bean-plant-sprouting-timelapse/
 - https://makeagif.com/gif/ice-to-boiling-timelapse-HyVX3p
 - https://courses.lumenlearning.com/suny-mcc-chemistryformajors-2/chapter/water-properties-2/
