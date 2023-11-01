@@ -36,7 +36,8 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 ### Which (or both) of these LLM abilities do you think are emergent?
 - Performing Arithmetic
 - Word in Context Matching
-  <img width="500" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/01da3bad-1be8-44bd-95b7-10f1a8269a92">
+
+<img width="700" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/01da3bad-1be8-44bd-95b7-10f1a8269a92">
 
 *(Answer given below)*
 
