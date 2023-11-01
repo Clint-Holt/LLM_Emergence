@@ -63,7 +63,7 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
   
 ![](img/F2_FewShot_Benchmarks.png)
 
-## Method 2: Various other specialized prompting techniques also led to emergence *(step-by-step thinking and tool use shown below)*
+## Method 2: Testing various prompting techniques (tool use shown below)
 <img width="350" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/9ad1f025-e2cb-4e14-afd5-5f31e95ec96c">
 
 
