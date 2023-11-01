@@ -93,6 +93,8 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 		  - Results for GPT-3 of different parameter sizes:
       ![](img/LinearScale.png)
 
+![image](https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/0dc36361-97c2-417d-a5e7-ee4c0ae86d48)
+
 ## Final Question:
 If we are trying to develop Artificial General Intelligence do you think we need loss functions focused on this goal
 or do you think it will simply "emerge"?
