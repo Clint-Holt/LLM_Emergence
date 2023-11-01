@@ -50,24 +50,23 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 1. Number of Parameters
 2. Training Set Size
 3. Training FLOPs
-- other ways: architecture, training epochs, amount of high quality data, benchmarked performance on one thing
+- other ways: architecture, training epochs, amount of high quality data, etc.
 
 ## They argue all 3 are correlated, but #3 is a good metric to encompass the others 
 
 - Emergence in this paper is thus the sudden increase from random accuracy to meaningful accuracy as Training FLOPs increase.
   
-## Method 1: Few Shot Prompting
-<img width="516" alt="image" src="[https://github.com/Clint-Holt/LLM_Emergence/img/F1_Fewshot.png](https://github.com/Clint-Holt/LLM_Emergence/blob/main/img/F1_Fewshot.png)">
+## Method 1: Few Shot Prompting showed emergence
 
 ![](img/F1_Fewshot.png)
 
   
 ![](img/F2_FewShot_Benchmarks.png)
 
-- Other specialized prompting techniques were also used and emergence was seen for them as well.
-  
-***************************** Insert here Wiki stuff if time *************************************
-  
+## Method 2: Various other specialized prompting techniques also led to emergence
+<img width="500" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/9ad1f025-e2cb-4e14-afd5-5f31e95ec96c">
+
+
 ## In contrast Cross-Entropy Loss *scales* with training FLOPS
 
 ![](img/MoreLinear.png)
@@ -77,6 +76,10 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 - "BLEU", "ROUGE", and "BLEURT" are the partial credit
 - 
 ![](img/AppF7_Partial_Credit_NotLinear.png)
+
+## They hypothesize that emergence may also be predictable by comparing to a good proxy instead of model scale
+<img width="752" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/5bd73323-76c4-40df-be2f-889461ef821c">
+
 
 ## Critiques:
 - I personally am unsure of if FLOPs is the best metric. But they did also look by metrics like # of parameters
