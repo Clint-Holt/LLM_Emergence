@@ -33,9 +33,11 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 
 
 
-### Which of these LLM abilities do you think are emergent?
-- Perform Arithmetic
-- Understand what a word means in context
+### Which (or both) of these LLM abilities do you think are emergent?
+- Performing Arithmetic
+- Word in Context Matching
+  <img width="500" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/01da3bad-1be8-44bd-95b7-10f1a8269a92">
+
 *(Answer given below)*
 
 # Paper's Overall Approach:
@@ -77,6 +79,23 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 ## They hypothesize that emergence may also be predictable by comparing to a good proxy instead of model scale
 <img width="652" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/5bd73323-76c4-40df-be2f-889461ef821c">
 
+## Formal Pseudocode
+LLMEmergenceWhenPlotting
+/* Emergent abilities in Large Language Models can be detected when they exhibit this behavior in a plot of Training FLOPs vs Performance */
+**Input**: a, b ∈ ℝ, where a is a semi-large number of Training FLOPs and b is a value statistically significantly higher than baseline performance.
+**Output**: A plot with Large Language Model Training FLOPs on the X-axis and Performance on the Y-axis.
+**Parameters**: 
+	n ∈ N , is the number of models (data points).
+	X = {x1, ..., xn} ⊆ R, is the Training FLOP values which correspond to the x-axis.
+	Y = {y1, ..., yn} ⊆ R, is the model performance which is plotted on the y-axis. Here Baseline performance is represented at 0.
+ 
+For i from 1 to n:
+	If xi < a, yi = 0
+	If xi = a, yi = b
+	If xi > a, yi = xi
+ 
+/* If the performance of an LLM ability can be approximated in this form then it is emergent.
+
 ## Conclusions
 - Many AI abilities we care about such as ability to perform arithmetic suddenly emerge instead of continually scaling
 - The field doesn't currently have a great way of predicting when new abilities will emerge.
@@ -91,8 +110,8 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 - - But I do think this is the best way to think of these models.
   - These are the same results on a linear scale.
 		  - Results for GPT-3 of different parameter sizes:
-      ![](img/LinearScale.png)
-
+    
+- Code to make the following 
 ![image](https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/0dc36361-97c2-417d-a5e7-ee4c0ae86d48)
 
 ## Final Question:
@@ -100,10 +119,17 @@ If we are trying to develop Artificial General Intelligence do you think we need
 or do you think it will simply "emerge"?
 
 
-## Reference
+## README References
 - Primary paper Jason Wei et al., “Emergent Abilities of Large Language Models” (arXiv, October 26, 2022), http://arxiv.org/abs/2206.07682.
 - "Scaling Laws for Neural Language Models" https://arxiv.org/pdf/2001.08361.pdf
 - https://laughingsquid.com/kidney-bean-plant-sprouting-timelapse/
 - https://makeagif.com/gif/ice-to-boiling-timelapse-HyVX3p
 - https://courses.lumenlearning.com/suny-mcc-chemistryformajors-2/chapter/water-properties-2/
-- The creation of this repo was assisted by Claude 
+- The creation of this repo was assisted by Claude
+
+## Paper Data Links:
+- https://paperswithcode.com/dataset/wikitext-2
+- https://paperswithcode.com/dataset/truthfulqa
+- https://paperswithcode.com/dataset/wikitext-103
+- https://paperswithcode.com/dataset/mmlu
+- https://paperswithcode.com/dataset/wic
