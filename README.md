@@ -45,10 +45,6 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 # Paper's Overall Approach:
 
 - To aggregate LLMs of many scales and assess them for accuracy on widely used and approved benchmarks.
-  
-## Method 1: Few Shot Prompting
-
-![](img/F1_Fewshot.png)
 
 ### There are 3 simplistic ways of looking at model scale:
 1. Number of Parameters
@@ -59,6 +55,11 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 ## They argue all 3 are correlated, but #3 is a good metric to encompass the others 
 
 - Emergence in this paper is thus the sudden increase from random accuracy to meaningful accuracy as Training FLOPs increase.
+  
+## Method 1: Few Shot Prompting
+<img width="516" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/img/F1_Fewshot.png">
+![](img/F1_Fewshot.png)
+
   
 ![](img/F2_FewShot_Benchmarks.png)
 
