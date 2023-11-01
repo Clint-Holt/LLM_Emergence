@@ -27,19 +27,15 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
   
 ![](img/boiling.gif)
 
-**In contrast, some properties such as density scale over a given range**
 
-![](img/water_density.jpg)
-
-**Many abilities of Large Language Models' scale linearly such as total loss on their test set**
-<img width="516" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/ae79e6e9-81bd-4b08-9963-7b41321cae41">
+**In contrast, many abilities of Large Language Models' *scale linearly* such as total loss on their test set**
+<img width="500" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/ae79e6e9-81bd-4b08-9963-7b41321cae41">
 
 
 
 ### Which of these LLM abilities do you think are emergent?
-- Arithmetic
-- Understanding what a word means in context
-  
+- Perform Arithmetic
+- Understand what a word means in context
 *(Answer given below)*
 
 # Paper's Overall Approach:
@@ -64,24 +60,30 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
   
 ![](img/F2_FewShot_Benchmarks.png)
 
-## Method 2: Various other specialized prompting techniques also led to emergence
-<img width="500" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/9ad1f025-e2cb-4e14-afd5-5f31e95ec96c">
+## Method 2: Various other specialized prompting techniques also led to emergence *(step-by-step thinking and tool use shown below)*
+<img width="350" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/9ad1f025-e2cb-4e14-afd5-5f31e95ec96c">
 
 
-## In contrast Cross-Entropy Loss *scales* with training FLOPS
-
+## In contrast Cross-Entropy Loss *scales* with training FLOPS in some cases
+- This indicates the guesses are linearly improving within the model's high-dimensional encoding though this isn't detectable when converted into output tokens and graded as correct or incorrect.
+- 
 ![](img/MoreLinear.png)
 
-## Interestingly "Partial-Credit" Metrics also exhibit emergence with increased training FLOPs
-
-- "BLEU", "ROUGE", and "BLEURT" are the partial credit
+## Even with "Partial-Credit", accuracy emergences instead of scaling
+- "BLEU", "ROUGE", and "BLEURT" are all partial credit metrics
 - 
 ![](img/AppF7_Partial_Credit_NotLinear.png)
 
 ## They hypothesize that emergence may also be predictable by comparing to a good proxy instead of model scale
 <img width="652" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/5bd73323-76c4-40df-be2f-889461ef821c">
 
+## Conclusions
+- Many AI abilities we care about such as ability to perform arithmetic suddenly emerge instead of continually scaling
+- The field doesn't currently have a great way of predicting when new abilities will emerge.
+- Cross-entropy loss often starts decreasing a while before an emergent ability actually appears, when looking at training FLOPs. This could 
+- When predicting if future better-designed models have certain emergent abilities, a more generalized metric than FLOPs, such as WikiText Perplexity, could be a stand-in.
 
+  
 ## Critiques:
 - I personally am unsure of if FLOPs is the best metric. But they did also look by metrics like # of parameters
 - Although out of the scope of this I'd be interested in comparison to emergence for other machine-learning model types
