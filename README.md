@@ -81,18 +81,30 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 <img width="652" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/5bd73323-76c4-40df-be2f-889461ef821c">
 
 ## Formal Pseudocode
+
 LLMEmergenceWhenPlotting
+
 /* Emergent abilities in Large Language Models can be detected when they exhibit this behavior in a plot of Training FLOPs vs Performance */
+
 **Input**: a, b ∈ ℝ, where a is a semi-large number of Training FLOPs and b is a value statistically significantly higher than baseline performance.
+
 **Output**: A plot with Large Language Model Training FLOPs on the X-axis and Performance on the Y-axis.
+
 **Parameters**: 
+
 	n ∈ N , is the number of models (data points).
+ 
 	X = {x1, ..., xn} ⊆ R, is the Training FLOP values which correspond to the x-axis.
+ 
 	Y = {y1, ..., yn} ⊆ R, is the model performance which is plotted on the y-axis. Here Baseline performance is represented at 0.
  
+ 
 For i from 1 to n:
+
 	If xi < a, yi = 0
+ 
 	If xi = a, yi = b
+ 
 	If xi > a, yi = xi
  
 /* If the performance of an LLM ability can be approximated in this form then it is emergent.
