@@ -57,7 +57,8 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 - Emergence in this paper is thus the sudden increase from random accuracy to meaningful accuracy as Training FLOPs increase.
   
 ## Method 1: Few Shot Prompting
-<img width="516" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/img/F1_Fewshot.png">
+<img width="516" alt="image" src="[https://github.com/Clint-Holt/LLM_Emergence/img/F1_Fewshot.png](https://github.com/Clint-Holt/LLM_Emergence/blob/main/img/F1_Fewshot.png)">
+
 ![](img/F1_Fewshot.png)
 
   
