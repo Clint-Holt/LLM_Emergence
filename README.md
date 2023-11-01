@@ -58,7 +58,8 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
   
 ## Method 1: Few Shot Prompting showed emergence
 
-![](img/F1_Fewshot.png)
+<img width="500" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/d9612425-181b-430d-b953-ee891af24e60">
+
 
   
 ![](img/F2_FewShot_Benchmarks.png)
@@ -78,7 +79,7 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 ![](img/AppF7_Partial_Credit_NotLinear.png)
 
 ## They hypothesize that emergence may also be predictable by comparing to a good proxy instead of model scale
-<img width="752" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/5bd73323-76c4-40df-be2f-889461ef821c">
+<img width="652" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/5bd73323-76c4-40df-be2f-889461ef821c">
 
 
 ## Critiques:
