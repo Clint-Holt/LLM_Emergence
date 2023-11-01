@@ -32,7 +32,8 @@ Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeau
 ![](img/water_density.jpg)
 
 **Many abilities of Large Language Models' scale linearly such as total loss on their test set**
-<img width="412" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/579c61b5-ad33-4945-97f6-f7fd025a794a">
+<img width="516" alt="image" src="https://github.com/Clint-Holt/LLM_Emergence/assets/19791088/ae79e6e9-81bd-4b08-9963-7b41321cae41">
+
 
 
 ### Which of these LLM abilities do you think are emergent?
